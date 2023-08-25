@@ -6,18 +6,18 @@ This ETL project is divided into the following subsections:
 - Create the Contacts DataFrame
 - Create the Crowdfunding Database
 
-#### Create the Category and Subcategory DataFrames
+#### Create the Category and Subcategory DataFrames:
 
-- Extract and transform the "crowdfunding.xlsx" Excel data to create a category DataFrame that has the following columns:
+- Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
     - A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories.
     - A "category" column that contains only the category titles.
 - Export the category DataFrame as category.csv.
-- Extract and transform the "crowdfunding.xlsx" Excel data to create a subcategory DataFrame that has the following columns:
+- Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
     - A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories.
     - A "subcategory" column that contains only the subcategory titles.
 - Export the subcategory DataFrame as subcategory.csv.
 
-#### Create the Campaign DataFrame
+#### Create the Campaign DataFrame:
 
 - Extract and transform the "crowdfunding.xlsx" Excel data to create a campaign DataFrame.
     - The "goal" column, converted to the float data type.
@@ -28,7 +28,7 @@ This ETL project is divided into the following subsections:
     - The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame.
 - Export the campaign DataFrame as campaign.csv
 
-#### Create the Contacts DataFrame
+#### Create the Contacts DataFrame:
 
 - Import the contacts.xlsx file into a DataFrame.
 - Iterate through the DataFrame, converting each row to a dictionary.
@@ -39,7 +39,7 @@ This ETL project is divided into the following subsections:
 - Split each "name" column value into a first and last name, and place each in a new column.
 - Clean and export the DataFrame as contacts.csv.
 
-#### Create the Crowdfunding Database
+#### Create the Crowdfunding Database:
 
 - Inspect the four CSV files, and then sketch an ERD of the tables.
 
